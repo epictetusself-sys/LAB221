@@ -1,6 +1,11 @@
-package random;
-// replace your package name here
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 
+
+package Short50;
+// replace your package name here
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +32,7 @@ class Number {
     }
 }
 
-public class Main {
+public class calculateEquation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Number numChecker = new Number();
@@ -52,7 +57,7 @@ public class Main {
                     System.out.println("----- Calculate Equation -----");
                     float a = getFloat(sc, numChecker, "Enter A: ");
                     float b = getFloat(sc, numChecker, "Enter B: ");
-                    List<Float> sol = new Main().calculateEquation(a, b);
+                    List<Float> sol = new calculateEquation().calculateEquation(a, b);
                     displaySolution(sol);
                     displayNumbers(new float[]{a, b}, numChecker);
                     break;
@@ -61,7 +66,7 @@ public class Main {
                     float aa = getFloat(sc, numChecker, "Enter A: ");
                     float bb = getFloat(sc, numChecker, "Enter B: ");
                     float cc = getFloat(sc, numChecker, "Enter C: ");
-                    List<Float> solq = new Main().calculateQuadraticEquation(aa, bb, cc);
+                    List<Float> solq = new calculateEquation().calculateQuadraticEquation(aa, bb, cc);
                     displaySolution(solq);
                     displayNumbers(new float[]{aa, bb, cc}, numChecker);
                     break;
